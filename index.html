@@ -11,7 +11,7 @@
     <title>Blessing's Portfolio</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Blessing Okpara</a>
@@ -54,7 +54,7 @@
 
       <div class="container-fluid bg-dark">
         <div class="row">
-          <div class="col-6 text-white pt-5 d-inline-flex">
+          <div class="col-sm-6 text-white pt-5 d-inline-flex">
             <div class="d-flex flex-column p-5 justify-content-center">
               <a href="#">
                 <img width="70%" src="images/github.png" alt="github" />
@@ -98,7 +98,7 @@
               </p>
             </div>
           </div>
-          <div class="col-6 text-white">
+          <div class="col-sm-6 text-white">
             <img
               class="img"
               src="images/bck11.png"
@@ -111,14 +111,16 @@
       </div>
 
       <div class="container mt-5">
-        <div class="d-inline-flex mt-5">
-          <h2>My Recent Works</h2>
-          <img class="m-5" src="images/rec.png" alt="" />
-        </div>
-
-        <div class="d-inline-flex">
-          <img src="images/ImgPlaceholder.png" alt="" />
-          <div class="container px-5 m-5">
+        <div class="row">
+          <div class="col-12 p-3">
+            <div class="container-sm d-inline-flex mt-5">
+              <h2>My Recent Works</h2>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <img style="width: 100%;" src="images/ImgPlaceholder.png" alt="" />
+          </div>
+          <div class="col-sm-6 p-3">
             <h2>Multi-Post Stories</h2>
             <p>
               A daily selection of privately personalized reads; no accounts or
@@ -143,7 +145,7 @@
         </div>
 
         <div class="row">
-          <div class="col-4 pt-5">
+          <div class="col-sm-4 pt-5">
             <div class="card" style="width: 400px;">
               <img
                 class="card-img-top"
@@ -167,7 +169,7 @@
             </div>
           </div>
 
-          <div class="col-4 pt-5">
+          <div class="col-sm-4 pt-5">
             <div class="card" style="width: 400px;">
               <img
                 class="card-img-top"
@@ -210,7 +212,7 @@
           </div>
           <!-- Started here with one card below -->
 
-          <div class="col-4 pt-5">
+          <div class="col-sm-4 pt-5">
             <div class="card" style="width: 400px;">
               <img
                 class="card-img-top"
@@ -251,7 +253,7 @@
           </div>
 
           <!-- Second Card -->
-          <div class="col-4 pt-5">
+          <div class="col-sm-4 pt-5">
             <div class="card" style="width: 400px;">
               <img
                 class="card-img-top"
@@ -294,7 +296,7 @@
           </div>
 
           <!-- Third Card -->
-          <div class="col-4 pt-5">
+          <div class="col-sm-4 pt-5">
             <div class="card" style="width: 400px;">
               <img
                 class="card-img-top"
@@ -379,9 +381,9 @@
         </div>
       </div>
       <!-- About Design -->
-      <div class="container-fluid bg-dark my-5 d-flex flex-row-reverse">
+      <div class="container-fluid-sm bg-dark my-5 d-flex flex-row-reverse">
         <div class="row">
-          <div class="col-6 p-5">
+          <div class="col-sm-6 p-5">
             <h1 class="pt-5" style="color: #f55800; width: 50%;">
               About Me
             </h1>
@@ -401,7 +403,7 @@
             <hr />
           </div>
 
-          <div class="col-6 pt-5 mt-5">
+          <div class="col-sm-6 pt-5 mt-5">
             <img
               class="img"
               src="images/abtImg.png"
@@ -416,7 +418,7 @@
           />
           <!-- </div>
         <div class="row"> -->
-          <div class="col-4 p-5">
+          <div class="col-sm-4 p-5">
             <ul>
               <li>
                 <img
@@ -455,7 +457,7 @@
             </ul>
           </div>
 
-          <div class="col-4 p-5">
+          <div class="col-sm-4 p-5">
             <ul>
               <li>
                 <img
@@ -500,7 +502,7 @@
             </ul>
           </div>
 
-          <div class="col-4 p-5">
+          <div class="col-sm-4 p-5">
             <ul>
               <li>
                 <img
@@ -548,45 +550,47 @@
       </div>
       <!-- Form Design -->
       <div class="container mt-3 d-flex py-5">
-        <h4 style="width: 235px;">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h4>
-        <form action="" class="col-9 px-5">
-          <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Full Name"
-              name="fname"
-            />
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 style="width: 73%;">
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </h2>
           </div>
-          <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter email"
-              name="email"
-            />
+          <div class="col-sm-7">
+            <form action="">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Full Name"
+                name="fname"
+                style="display: inline-block; width: 50%;"
+              />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter email"
+                name="email"
+                style="width: 50%; float: left;"
+              />
+              <textarea
+                class="form-control"
+                placeholder="Enter Message"
+                rows="5"
+                id="comment"
+                name="text"
+                style="padding-right: 160px;"
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="background: #f55800; margin-top: 20px;"
+              >
+                Get in touch
+              </button>
+            </form>
           </div>
-
-          <div>
-            <textarea
-              class="form-control"
-              placeholder="Enter Message"
-              rows="5"
-              id="comment"
-              name="text"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="btn btn-primary"
-            style="background: #f55800;"
-          >
-            Get in touch
-          </button>
-        </form>
+        </div>
       </div>
 
       <div class="container">
