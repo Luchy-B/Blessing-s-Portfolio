@@ -8,6 +8,7 @@ My Portfolio
 
 - HTML
 - CSS
+- BOOTSTRAP
 
 ## Live Demo (If available)
 [Live Demo Link] (https://luchy-b.github.io/)
